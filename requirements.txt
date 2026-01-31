@@ -1,3 +1,0 @@
-# No external dependencies required.
-# The project uses only the Python standard library (difflib).
-# Python 3.8 or newer is required.

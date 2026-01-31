@@ -1,12 +1,9 @@
-"""
-Main entry point for the name similarity checker.
-Loads the dataset, takes user input, computes similarity, and prints results.
-"""
+# name similarity checker - find closest names from our list when user types something
 
 from data_loader import load_names
 from similarity import rank_names
 
-TOP_N_DEFAULT = 10
+HOW_MANY_TO_SHOW = 10
 
 
 def main():
@@ -37,8 +34,8 @@ def main():
 
         print()
         print(f"Best match: {best_name!r} (score: {best_score:.4f})")
-        print(f"Top {TOP_N_DEFAULT} similar names:")
-        for name, score in rank_names(query, names, top_n=TOP_N_DEFAULT):
+        print(f"Top {HOW_MANY_TO_SHOW} similar names:")
+        for name, score in rank_names(query, names, top_n=HOW_MANY_TO_SHOW):
             print(f"  {score:.4f}  {name!r}")
         print()
 

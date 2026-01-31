@@ -53,7 +53,6 @@ name-similarity-checker/
 |-- data_loader.py         # Loads the name list
 |-- similarity.py          # Similarity computation and ranking
 |-- main.py                # Entry point: input, match, print best + list
-|-- requirements.txt
 +-- README.md
 ```
 
